@@ -3,11 +3,12 @@
 ## Instructions
 
 ### From the terminal
-1. `git clone git@ewegithub.sb.karmalab.net:Omega/hackathon-2016.git`
-2. `node service.js`
+1. `git clone git@github.com:prettydiff/schadenfreude.git`
+2. `cd schadenfreude`
+3. `node service.js`
 
 ### From the browser
-3. Go to https://localhost:9001
+4. Go to https://localhost:9001
 
 If you are in an environment with an unstable network or unreliable services you will need some help.  TCP timeouts will break this simple Node service.  Here is a quick alternative approach:
 
