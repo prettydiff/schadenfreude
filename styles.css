@@ -1,0 +1,267 @@
+html {
+    font-family: Arial, sans-serif;
+    font-size  : 10px;
+    margin     : 0;
+    padding    : 0;
+}
+body {
+    background       : #fff;
+    background-repeat: no-repeat;
+    background-size  : 100% 100%;
+    height           : 100%;
+    margin           : 0;
+    overflow         : scroll;
+    padding          : 0;
+    width            : 100%;
+}
+h1 {
+    border     : 0.05em solid #000;
+    color      : #fff;
+    display    : inline-block;
+    font-size  : 3em;
+    height     : 1.2em;
+    margin     : 0.75em;
+    padding    : 0.5em;
+    position   : relative;
+    text-shadow: 0 0 0.05em #000;
+}
+h1 span.text {
+    background: none;
+    opacity   : 1;
+    position  : relative;
+    z-index   : 2;
+}
+h1 span {
+    background: #000;
+    display   : block;
+    height    : 100%;
+    left      : 0;
+    opacity   : 0.35;
+    position  : absolute;
+    top       : 0;
+    width     : 100%;
+}
+#master-reset {
+    color      : #600;
+    font-size  : 2em;
+    font-weight: bold;
+    position   : absolute;
+    right      : 1em;
+    top        : 1em;
+}
+#main-menu .window-body {
+    height: 30em;
+    width : 35em;
+}
+#main-menu ul {
+    margin : 0;
+    padding: 0;
+}
+#main-menu .window-body li {
+    float     : left;
+    list-style: none;
+}
+#main-menu .window-body button {
+    cursor   : pointer;
+    font-size: 1.4em;
+    height   : 8em;
+    margin   : 1em;
+    width    : 10em;
+}
+#main-menu .icon {
+    display  : block;
+    font-size: 4em;
+}
+#spawn-window .icon {
+    color: #090;
+}
+#spawn-textpad .icon {
+    color: #00c;
+}
+#spawn-terminal .icon {
+    color: #f90;
+}
+#spawn-export .icon {
+    color: #c00;
+}
+.window {
+    border-top: 0.1em solid #024;
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, .5);
+    position  : absolute;
+    z-index   : 1;
+}
+.window:hover h2 {
+    background: #889899;
+}
+.window:hover .window-body {
+    background: #eef;
+}
+.window h2 {
+    background         : #aab8bb;
+    border             : 0.1em solid #024;
+    border-bottom-color: #012;
+    border-right-color : #012;
+    box-shadow         : 0.2em 0.2em 0.25em rgba(0, 0, 0, .5);
+    color              : #036;
+    cursor             : move;
+    font-size          : 1em;
+    margin             : -0.1em 0 -3.25em;
+    padding            : 0.25em;
+    position           : relative;
+    z-index            : 10;
+}
+.window h2:hover {
+    background: #889899;
+    color     : #024;
+}
+.window h2 span {
+    display  : block;
+    font-size: 2.16em;
+}
+.window-body {
+    background  : #fff;
+    border-color: #024;
+    border-style: solid;
+    border-width: 0 0.1em 0.1em;
+    font-size   : 1.2em;
+    margin      : 0;
+    overflow    : scroll;
+    padding     : 3em 0.5em 0;
+    position    : relative;
+    z-index     : 2;
+}
+.terminal {
+    color: #fff;
+    background: #000;
+    padding-left:1em;
+}
+.terminal::before {
+    color: #fff;
+    content: "» ";
+}
+.arrayData {
+    margin: 0;
+    padding: 0;
+}
+.arrayData li {
+    display: block;
+    list-style: none;
+    border-style: solid;
+    border-width: 0.1em;
+    margin: 1em 0;
+    padding: 0.5em;
+}
+.arrayData h3 {
+    margin: 0 0 0.5em;
+}
+.arrayData p {
+    margin: 0;
+    padding: 0;
+}
+.arrayData .pass {
+    background: #bdb;
+    border-color: #060;
+}
+.arrayData .fail {
+    background: #f99;
+    border-color: #600;
+}
+.arrayData .building {
+    background: #fda;
+    border-color: #960;
+}
+.service-prep {
+    font-size: 1.4em;
+}
+.service-prep input {
+    display:block;
+}
+.window p {
+    font-weight: bold;
+}
+.window p label {
+    font-weight: normal;
+}
+.buttons {
+    margin    : 0.5em 2.75em -3.75em 0;
+    text-align: right;
+}
+.buttons button {
+    border        : 0.2em solid #036;
+    cursor        : pointer;
+    font-family   : "Lucida Console", "Trebuchet MS", "Arial";
+    font-weight   : bold;
+    height        : 2em;
+    margin-left   : 0.5em;
+    padding-bottom: 0.25em;
+    position      : absolute;
+    text-indent   : -0.2em;
+    top           : 0.5em;
+    width         : 2em;
+    z-index       : 10;
+}
+.buttons .window-delete {
+    background  : #fcc;
+    border-color: #600;
+    color       : #600;
+    right       : 8em;
+}
+.buttons .window-delete:hover {
+    background: #f33;
+}
+.buttons .window-minimize {
+    background  : #fc9;
+    border-color: #630;
+    color       : #630;
+    right       : 5em;
+}
+.buttons .window-minimize:hover {
+    background: #f90;
+}
+.buttons .window-maximize {
+    background  : #cec;
+    border-color: #060;
+    color       : #060;
+    right       : 2em;
+}
+.buttons .window-maximize:hover {
+    background: #6f6;
+}
+.buttons .window-resize {
+    background   : #ccf;
+    border-radius: 0;
+    color        : #036;
+    cursor       : se-resize;
+    height       : 1.4em;
+    line-height  : 0.5;
+    margin       : -1.45em -4.9em 0 0;
+    position     : absolute;
+    right        : 4.9em;
+    text-indent  : -0.5em;
+    top          : 100%;
+    width        : 1.3em;
+}
+#scratchpad {
+    bottom: 4em;
+    left  : 20em;
+}
+#filters h2,
+#scratchpad h2 {
+    cursor: pointer;
+    width : 17em;
+}
+#scratchpad textarea {
+    font-size: 1.2em;
+    padding  : 0;
+}
+textarea.config {
+    display: block;
+    height: 10em;
+    width: 100%;
+}
+.clear {
+    clear  : both;
+    display: block;
+    float  : none;
+    height : 0.01em;
+}

@@ -1,0 +1,44 @@
+<!doctype>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Uptime Dashboard</title>
+        <meta content="noindex, nofollow" name="robots"/>
+        <meta content="en" http-equiv="Content-Language"/>
+        <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type"/>
+        <meta content="blendTrans(Duration=0)" http-equiv="Page-Enter"/>
+        <meta content="blendTrans(Duration=0)" http-equiv="Page-Exit"/>
+        <meta content="text/css" http-equiv="content-style-type"/>
+        <meta content="application/javascript" http-equiv="content-script-type"/>
+        <link href="styles.css" media="all" rel="stylesheet" type="text/css"/>
+    </head>
+    <body id="bodytag">
+        <span class="bodyback"></span>
+        <h1><span class="text">Uptime Dashboard</span><span></span></h1>
+        <button id="master-reset">Reset All</button>
+        <div class="window" id="main-menu">
+            <h2>
+                <span>Main Menu</span>
+            </h2>
+            <p class="buttons">
+                <button class="window-minimize">&#x25ac;</button>
+                <button class="window-maximize">&#x25ae;</button>
+                <button class="window-resize">&harr;</button>
+            </p>
+            <div class="window-body">
+                <ul>
+                    <li><button id="spawn-window"><span class="icon">&#x23d9;</span>Spawn New Window</button></li>
+                    <li><button id="spawn-textpad"><span class="icon">&#x0166;</span>Open Textpad</button></li>
+                    <!--li><button id="spawn-terminal"><span class="icon">&#x203a;</span>Open Terminal</button></li-->
+                    <li><button id="spawn-export"><span class="icon">&#x203b;</span>Import/Export Configuration</button></li>
+                </ul>
+            </div>
+        </div>
+        <div style="display:none">
+            <p id="window-delete">Clicking this icon will delete this window and all associated data.</p>
+            <p id="window-maximize">Click this icon to maximize the window to the browser view port.</p>
+            <p id="window-minimize">Click this icon to minimize the window to the bottom of the view port.</p>
+            <p id="window-resize">Drag this icon to change the width and height of the window.</p>
+        </div>
+        <script src="interaction.js" type="application/javascript"></script>
+    </body>
+</html>
