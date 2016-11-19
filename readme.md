@@ -9,6 +9,12 @@
 ### From the browser
 3. Go to https://localhost:9001
 
+If you are in an environment with an unstable network or unreliable services you will need some help.  TCP timeouts will break this simple Node service.  Here is a quick alternative approach:
+
+1. `npm install forever -g`
+2. `forever start service.js`
+3. Go to https://localhost:9001 in the browser
+
 ## Notes
 
 * I am not formatting the data response, because I don't know what your data looks like.  The data comes back in a function called *ajax*.
